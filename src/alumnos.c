@@ -25,30 +25,50 @@
 
 /*=====[Definitions of public global variables]==============================*/
 
+/**
+ * @brief Estructura con los datos del Alumno "Esteban_Volentini"
+ * 
+ */
 static const struct alumno_s ESTEBAN_VOLENTINI = {
     .apellidos = "VOLENTINI",
     .nombres = "Esteban Daniel",
     .documento = "23.517.968",
 };
 
+/**
+ * @brief Estructura con los datos del Alumno "Alejandro_Permingeat"
+ * 
+ */
 static const struct alumno_s ALEJANDRO_PERMINGEAT = {
     .apellidos = "PERMINGEAT",
     .nombres = "Alejandro",
     .documento = "99.999.999",
 };
 
+/**
+ * @brief Estructura con los datos del Alumno "Armando_Suhuan"
+ * 
+ */
 static const struct alumno_s ARMANDO_SUHUAN = {
     .apellidos = "SUHUAN",
     .nombres = "Armando",
     .documento = "45577355",
 };
 
+/**
+ * @brief Constante para identificar a cada Alumno
+ * 
+ */
 const alumno_t ALUMNOS[] = {
     &ESTEBAN_VOLENTINI,
     &ALEJANDRO_PERMINGEAT,
     &ARMANDO_SUHUAN,
 };
 
+/**
+ * @brief Permite obtner la constante que almacena la cantidad de alumnos disponibles
+ * 
+ */
 const int CANTIDAD_ALUMNOS = (sizeof(ALUMNOS) / sizeof(alumno_t));
 
 /*=====[Definitions of private global variables]=============================*/

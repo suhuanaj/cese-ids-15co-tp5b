@@ -29,3 +29,9 @@ $(BIN_DIR): $(OUT_DIR)
 $(OBJ_DIR): $(OUT_DIR)
 	@echo Creating output objects folder
 	@mkdir $(OBJ_DIR)
+
+doc/index.html: Doxyfile $(SRC_DIR)/*.c $(INC_DIR)/*.h
+	doxygen Doxyfile
+.PHONY: doc
+doc: doc/index.html;
+
